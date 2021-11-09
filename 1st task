@@ -1,0 +1,5 @@
+import random
+list1 = ["Олег", "Ігор", "Дмитро"]
+list2 = ["написав", "розбив", "зробив"]
+list3 = ["портрет", "стакан", "роботу"]
+print(random.choice(list1), random.choice(list2), random.choice(list3))
