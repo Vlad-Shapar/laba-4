@@ -1,0 +1,7 @@
+# завдання 2.1
+book = 'aaosdkasodasdoiasndajdiasdjkabdkjasnd oiasdja osdjas doasjda siodjasdoasdjasd hasiduhasidua hsdiuasd ia'
+print('Загальна к-ть символів у тексті: ' ,len(book))
+a = book.count(' ')
+print('К-ть пробілів у тексті: ', a)
+print('Загальна к-ть символів у тексті без пробілів: ', len(book) - a)
+# завдання 2.2
