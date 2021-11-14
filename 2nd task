@@ -4,7 +4,9 @@ print('Загальна к-ть символів у тексті: ' ,len(book))
 a = book.count(' ')
 print('К-ть пробілів у тексті: ', a)
 print('Загальна к-ть символів у тексті без пробілів: ', len(book) - a)
+
 # завдання 2.2
+
 text = open("D:\dorlaba4.txt", "r+")
 words = text.read().split()
 word_occurrences = {}
