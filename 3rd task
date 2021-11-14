@@ -1,0 +1,16 @@
+text = open("D:\dorlaba4.txt", "r+")
+stop_words = ['или', 'но', 'дабы', 'затем', 'потом', 'лишь только', 'или', 'но', 'дабы', 'затем', 'потом', 'лишь только', 'для', 'на', 'по', 'со', 'из', 'от', 'до', 'без', 'над', 'под', 'за', 'при', 'после', 'во']
+
+words = text.read().split()
+words_number = 0
+stop_words_number = 0
+
+for word in words:
+    words_number += 1
+
+    if word in stop_words:
+        stop_words_number += 1
+
+water_percentage = stop_words_number / words_number
+
+print(water_percentage * 100)
