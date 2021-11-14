@@ -5,3 +5,26 @@ a = book.count(' ')
 print('К-ть пробілів у тексті: ', a)
 print('Загальна к-ть символів у тексті без пробілів: ', len(book) - a)
 # завдання 2.2
+text = open("D:\dorlaba4.txt", "r+")
+words = text.read().split()
+word_occurrences = {}
+words_number = 0
+words_number_without_repeat = 0
+
+for word in words:
+    words_number += 1
+    if word in word_occurrences:
+        word_occurrences[word] += 1
+    else:
+        word_occurrences[word] = 1
+        words_number_without_repeat += 1
+
+unique_words_number = 0
+for word in word_occurrences:
+    if word_occurrences[word] == 1:
+        unique_words_number += 1
+
+print('Текст: ', text)
+print('Слова: ', words)
+print('Слова2: ', word_occurrences)
+print('Загальна кількість слів: ', words_number,'Слова без повтору: ', words_number_without_repeat,'Слова, що зустрічаються тільки один раз: ', unique_words_number)
